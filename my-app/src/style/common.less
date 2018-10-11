@@ -1,0 +1,94 @@
+@charset "utf-8";
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,
+pre,form,fieldset,input,textarea,p,blockquote,th,td {
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  -moz-box-sizing:border-box; /* Firefox */
+  -webkit-box-sizing:border-box; /* Safari */
+}
+
+body {
+  font-family: "微软雅黑", "PingFang SC", Arial, Helvetica, sans-serif;
+  //word-wrap: break-word;
+  //color: #333;
+  background-color: #fff;
+  font-size: 14px;
+}
+
+html,body {
+  height: 100%;
+  width: 100%;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+input[disabled],input:disabled{
+  background-color: transparent;
+  outline: none;
+}
+
+a,input{
+  -webkit-tap-highlight-color:rgba(255,0,0,0);
+}
+
+
+input,textarea {
+  -webkit-user-select:auto; /*webkit浏览器*/
+  margin: 0px;
+  padding: 0px;
+  outline: none;
+}
+
+a, input, button {
+  outline: none;
+}
+ul,ol,li{
+  list-style: none;
+}
+a:hover, a:active, a:focus {
+  text-decoration: none !important;
+}
+img {
+  max-width: 100%;
+  border: 0;
+}
+select, input, img, select {
+  vertical-align: middle;
+}
+
+button{
+  border: none;
+  outline: none;
+}
+.commonBtn{
+  width: 120px;
+  height: 40px;
+  border-radius: 6px;
+  font-size: 16px;
+  color: #fff;
+}
+.btnY{
+  background-image: linear-gradient(0deg,
+  #f5a660 0%,
+  #ffdc7d 100%),
+  linear-gradient(
+          #f7f7f8,
+          #f7f7f8);
+}
+.btnG{
+  background-image: linear-gradient(0deg,
+  #749ceb 0%,
+  #8bcde9 100%),
+  linear-gradient(
+          #f7f7f8,
+          #f7f7f8);
+}
+.blueColor{
+  color: #6bb5d7;
+}
+.roseColor{
+  color: #f878a9;
+}

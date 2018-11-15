@@ -1,6 +1,6 @@
 import React,{Component} from 'react'
-import {post} from '../../../fetch/index';
-import {get} from "../../../fetch/index";
+import {post} from '../../../axios/index';
+import {get} from "../../../axios/index";
 export default class Ssc extends Component{
 
     constructor(props){

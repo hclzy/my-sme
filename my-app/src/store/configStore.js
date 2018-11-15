@@ -16,6 +16,6 @@ export default function configStore(initState){
         ) //插件调试，未安装会报错
 
     //
-    )
+    );
     return store
 }

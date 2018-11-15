@@ -1,11 +1,6 @@
 import React,{Component} from 'react'
 
 import {connect} from 'react-redux'
-import {post} from '../../../fetch/index';
-import {get} from "../../../fetch/index";
-
-import api from '../server/server'
-import http from '../../../fetch/axios'
 
 
 import { getTabLottery } from '../bet.redux'
@@ -32,33 +27,14 @@ export default class Ssc extends Component{
     componentDidMount(){
         // this.props.getTabLottery("genius")
     }
-    async getPlayData(){/*get play dataList*/
-        /*get("https://api.sfcp.bet/api/Bet/GetTypePlayList",{typeId:1,isGov:true}).then((res) => {
-            return res.json();
-        }).then((json)=>{
-            this.setState({
-                dataList: json.data
-            })
-        }).catch(function (err) {
-            console.log(err);
-        })*/
-        /*const param = {typeId:1,isGov:true}
-        await http.get(api.right,param).then((res)=>{
-            this.setState({
-                dataList: res.data.data
-            })
 
-        });*/
-        // const res = await playData(param);
-
-    }
     getPlayList(idx){
         this.setState({
             active:idx,
             loading:true,
             choosedNavIdx:idx
         });
-        console.log(idx)
+        console.log(idx);
         console.log("choosedNavIdx:"+this.state.choosedNavIdx)
     }
 
